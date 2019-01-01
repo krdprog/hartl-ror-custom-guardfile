@@ -9,6 +9,7 @@ Custom Guardfile for Hartl book (lesson 3.7.3)
 - Guardfile
 - Gemfile
 - /test/test_helper.rb
+- дополнительная строка для .gitignore в файле add_to_gitignore
 
 ## Как настроить и как работать:
 
