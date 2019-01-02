@@ -39,7 +39,7 @@ bundle exec guard init
 
 ```bash
 bundle exec guard
-``
+```
 и нажать Enter - для старта
 
 Ctrl + D - для остановки
