@@ -29,7 +29,6 @@ group :test do
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
   gem 'minitest-reporters'
-  gem 'mini_backtrace'
   gem 'guard-minitest'
   gem 'guard'
 end
