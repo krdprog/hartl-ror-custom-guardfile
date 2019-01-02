@@ -7,14 +7,12 @@ Custom Guardfile for Hartl book (lesson 3.7.3)
 ## Используемые гемы:
 
 - minitest-reporters
-- mini_backtrace
 - guard
 - guard-minitest
 
 ## Описание:
 
 - Улучшенные отчёты об успешном/неуспешном прохождении тестов;
-- Утилита фильтрации трассировки стека;
 - Автоматический запуск тестов, определяющий изменение файлов.
 
 ## Файлы:
@@ -26,16 +24,23 @@ Custom Guardfile for Hartl book (lesson 3.7.3)
 
 ## Как настроить и как работать:
 
-1. Инициализируем Guard для автозапуска тестов:
+1. Для отображения отчётов КРАСНЫЙ/ЗЕЛЁНЫЙ в цвете, добавим в файл /test/test_helper.rb
+
+```ruby
+require "minitest/reporters"
+Minitest::Reporters.use!
+```
+
+2. Инициализируем Guard для автозапуска тестов:
 
 ```bash
 bundle exec guard init
 ```
-2. Вставляем код из предложенного в репозитории файла Guardfile
+3. Вставляем код из предложенного в репозитории файла Guardfile из https://github.com/krdprog/hartl-ror-custom-guardfile/blob/master/Guardfile
 
-3. Добавим Spring в файл .gitignore (см. код в файле add_to_gitignore)
+4. Добавим Spring в файл .gitignore (см. код в файле add_to_gitignore)
 
-4. Запустим Guard
+5. Запустим Guard
 
 ```bash
 bundle exec guard
@@ -44,7 +49,7 @@ bundle exec guard
 
 Ctrl + D - для остановки
 
-5. Если тормозит тестирование:
+6. Если тормозит тестирование:
 
 ```bash
 ps aux | grep spring
