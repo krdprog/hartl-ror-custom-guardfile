@@ -56,3 +56,7 @@ spring stop
 # или
 pkill -9 -f spring
 ```
+## Ссылки по теме:
+
+- https://github.com/guard/guard
+- https://www.railstutorial.org/book/static_pages
