@@ -29,7 +29,7 @@ Custom Guardfile for Hartl book (lesson 3.7.3)
 1. Инициализируем Guard для автозапуска тестов:
 
 ```bash
-bundle exec  guard init
+bundle exec guard init
 ```
 2. Вставляем код из предложенного в репозитории файла Guardfile
 
