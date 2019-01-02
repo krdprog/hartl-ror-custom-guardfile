@@ -40,6 +40,10 @@ bundle exec guard init
 
 4. Добавим Spring в файл .gitignore (см. код в файле add_to_gitignore)
 
+```ruby
+/spring/*.pid
+```
+
 5. Запустим Guard
 
 ```bash
