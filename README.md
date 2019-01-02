@@ -24,36 +24,36 @@ Custom Guardfile for Hartl book (lesson 3.7.3)
 
 ## Как настроить и как работать:
 
-1. Для отображения отчётов КРАСНЫЙ/ЗЕЛЁНЫЙ в цвете, добавим в файл /test/test_helper.rb
+**1. Для отображения отчётов КРАСНЫЙ/ЗЕЛЁНЫЙ в цвете, добавим в файл /test/test_helper.rb**
 
 ```ruby
 require "minitest/reporters"
 Minitest::Reporters.use!
 ```
 
-2. Инициализируем Guard для автозапуска тестов:
+**2. Инициализируем Guard для автозапуска тестов:**
 
 ```bash
 bundle exec guard init
 ```
-3. Вставляем код из предложенного в репозитории файла Guardfile из https://github.com/krdprog/hartl-ror-custom-guardfile/blob/master/Guardfile
+**3. Вставляем код из предложенного в репозитории файла Guardfile из** https://github.com/krdprog/hartl-ror-custom-guardfile/blob/master/Guardfile
 
-4. Добавим Spring в файл .gitignore (см. код в файле add_to_gitignore)
+**4. Добавим Spring в файл .gitignore (см. код в файле add_to_gitignore):**
 
 ```ruby
 /spring/*.pid
 ```
 
-5. Запустим Guard
+**5. Запустим Guard:**
 
 ```bash
 bundle exec guard
 ```
-и нажать Enter - для старта
+- и нажать Enter - для старта
 
-Ctrl + D - для остановки
+- Ctrl + D - для остановки
 
-6. Если тормозит тестирование:
+**6. Если тормозит тестирование:**
 
 ```bash
 ps aux | grep spring
