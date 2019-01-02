@@ -26,4 +26,33 @@ Custom Guardfile for Hartl book (lesson 3.7.3)
 
 ## Как настроить и как работать:
 
-in progress
+1. Инициализируем Guard для автозапуска тестов:
+
+```bash
+bundle exec  guard init
+```
+2. Вставляем код из предложенного в репозитории файла Guardfile
+
+3. Добавим Spring в файл .gitignore (см. код в файле add_to_gitignore)
+
+4. Запустим Guard
+
+```bash
+bundle exec guard
+``
+и нажать Enter - для старта
+
+Ctrl + D - для остановки
+
+5. Если тормозит тестирование:
+
+```bash
+ps aux | grep spring
+kill -9 121234 # это номер процесса
+
+# или
+spring stop
+
+# или
+pkill -9 -f spring
+```
