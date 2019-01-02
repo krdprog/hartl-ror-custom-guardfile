@@ -69,3 +69,10 @@ pkill -9 -f spring
 
 - https://github.com/guard/guard
 - https://www.railstutorial.org/book/static_pages
+
+## Алиасы в ~/.bashrc:
+
+```txt
+alias begi='bundle exec guard init'
+alias beg='bundle exec guard'
+```
